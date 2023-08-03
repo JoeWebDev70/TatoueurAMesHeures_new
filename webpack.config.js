@@ -21,7 +21,7 @@ const path = require('path');
 				open: true,
 				host: "localhost",
 				liveReload: true,
-				port: 3000,
+				port: 9000,
 				static:{
 				  directory: path.join(__dirname, "public"),  
 				},
@@ -64,16 +64,20 @@ const path = require('path');
 				new HtmlWebpackPlugin({
 					inject : true,
 					minify : true,
-					meta: {
-						viewport : 'width=device-width, initial-scale=1, shrink-to-fit=no',
-						description : 'Ceci est une page pour webpack'
-					},
 					template: "./src/index.html",	
 				}),
-				// new HtmlWebpackPlugin({
-				// 	template: './src/pagetwo.html',
-				// 	filename: "pagetwo.html",
-				// }),
+				new HtmlWebpackPlugin({
+					inject : true,
+					minify : true,
+					template: './src/galerie.html',
+					filename: "galerie.html",
+				}),
+				new HtmlWebpackPlugin({
+					inject : true,
+					minify : true,
+					template: './src/mentions_legales.html',
+					filename: "mentions_legales.html",
+				}),
 				new MiniCssExtractPlugin({
 					filename: "style.css"
 				}),
@@ -110,6 +114,20 @@ const path = require('path');
 					{
 						test: /\.s[ac]ss$/i,
 						use: [stylesHandler,'css-loader', 'sass-loader'],
+					},
+					{
+						test: /\.(eot|ttf|woff|woff2)$/i,
+						type: 'asset',
+						generator:{
+							filename:'./ressources/fonts/[name][ext]',
+						}, 
+					},
+					{
+						test: /\.(webp|svg|png|jpe?g|gif)$/i,
+						type: 'asset',
+						generator:{
+							filename:'./ressources/images/[name][ext]',
+						}, 
 					},
 				],
 			},

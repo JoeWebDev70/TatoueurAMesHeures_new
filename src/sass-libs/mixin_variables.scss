@@ -1,0 +1,9 @@
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+
+
+@mixin BoxSizing($kindOfBox){
+    -webkit-box-sizing: $kindOfBox;
+    -moz-box-sizing: $kindOfBox;
+    box-sizing: $kindOfBox;
+}
