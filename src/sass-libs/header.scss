@@ -1,0 +1,16 @@
+//HEADER
+header{
+    padding: 0 25px 0 25px;
+    @include BoxSizing(border-box); 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        display: flex;
+        gap: 15px;
+    }
+}
