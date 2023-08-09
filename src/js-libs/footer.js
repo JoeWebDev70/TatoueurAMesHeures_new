@@ -17,12 +17,15 @@ const pCopyright = document.createElement("p");
 const aCopyright= document.createElement("a");
 aCopyright.href = "./index.html";
 aCopyright.classList.add("link_page");
-const aCopyrightContent = document.createTextNode("Tatoueur À mes Heures \u00a9 2023");
+const spanCopyright = document.createElement("span");
+const aCopyrightContent1 = document.createTextNode("Tatoueur À mes Heures");
+const aCopyrightContent2 = document.createTextNode(" \u00a9 2023");
 //insert copyright
 generalFooter.appendChild(pCopyright);
 pCopyright.appendChild(aCopyright);
-aCopyright.appendChild(aCopyrightContent);
-
+aCopyright.appendChild(spanCopyright);
+spanCopyright.appendChild(aCopyrightContent1);
+pCopyright.appendChild(aCopyrightContent2);
 
 //create div social media
 const divSocial = document.createElement("div");

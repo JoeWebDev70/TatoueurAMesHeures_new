@@ -1,7 +1,11 @@
 //HEADER
 header{
-    padding: 0 25px 0 25px;
+    padding: 0 30px 0 30px;
     @include BoxSizing(border-box); 
+    background-color: $colorBgWhite;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
 }
 
 nav{

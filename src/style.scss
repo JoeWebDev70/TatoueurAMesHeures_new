@@ -3,6 +3,7 @@
 @import "./sass-libs/transition.scss";
 @import "./sass-libs/header.scss";
 @import "./sass-libs/footer.scss";
+@import "./sass-libs/index.scss";
 
 :root{
     font-size: 100%;
@@ -10,6 +11,19 @@
 
 body{
     margin: 0;
+    font : 16px 'Manrope', Arial, sans-serif;
+    font-weight: 400;
+    background-color: $colorBgBlack;
+    color: $colorWhite;
+}
+
+h1{
+    font-family: 'Pirata One';
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 p{
@@ -19,6 +33,14 @@ p{
 a{
     text-decoration: none;
     color: $colorBlack;
+}
+
+a:hover{
+    color:$colorPurple;
+
+    img{
+        filter: $colorFilterPurple;
+    }
 }
 
 img{

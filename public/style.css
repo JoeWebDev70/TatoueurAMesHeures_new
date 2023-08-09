@@ -36,10 +36,14 @@
 }
 
 header {
-  padding: 0 25px 0 25px;
+  padding: 0 30px 0 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #FEFEFE;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 700;
 }
 
 nav {
@@ -56,10 +60,19 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 25px 40px 25px;
+  padding: 40px 30px 40px 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #FEFEFE;
+  font-family: "Manrope";
+  font-size: 16px;
+  font-weight: 400;
+}
+footer span {
+  font-family: "Pirata One";
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .social_media {
@@ -82,12 +95,62 @@ footer {
   margin-left: -25px;
 }
 
+#presentation {
+  padding: 80px 150px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FEFEFE;
+  color: #130E0A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+}
+
+#presentation_photos {
+  border: solid green;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+#presentation_photos #photo_index1 {
+  z-index: 2;
+}
+#presentation_photos #photo_index2 {
+  z-index: 1;
+  margin-top: 250px;
+  margin-left: -50px;
+}
+
+#presentation_text {
+  border: solid blue;
+  width: 50%;
+}
+
+.body_highlight {
+  font-weight: 700;
+}
+
 :root {
   font-size: 100%;
 }
 
 body {
   margin: 0;
+  font: 16px "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  background-color: #0B0B0C;
+  color: #F8F8FF;
+}
+
+h1 {
+  font-family: "Pirata One";
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 p {
@@ -96,7 +159,14 @@ p {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #130E0A;
+}
+
+a:hover {
+  color: #75678F;
+}
+a:hover img {
+  filter: invert(44%) sepia(9%) saturate(1203%) hue-rotate(219deg) brightness(93%) contrast(95%);
 }
 
 img {

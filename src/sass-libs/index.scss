@@ -1,0 +1,38 @@
+#presentation{
+    
+    padding: 80px 150px;
+    @include BoxSizing(border-box);
+    background-color: $colorBgWhite;
+    color: $colorBlack;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+
+}
+
+#presentation_photos{
+    border: solid green;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+
+    #photo_index1{
+        z-index: 2;
+    }
+
+    #photo_index2{
+        z-index: 1;
+        margin-top: 250px;
+        margin-left: -50px;
+    }
+}
+
+#presentation_text{
+    border: solid blue;
+    width: 50%;
+}
+
+.body_highlight{
+    font-weight: 700;
+}

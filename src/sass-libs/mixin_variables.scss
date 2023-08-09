@@ -1,6 +1,11 @@
-$colorBlack: #000000;
-$colorWhite: #ffffff;
-
+$colorBlack: #130E0A; //txt
+$colorWhite: #F8F8FF; //txt
+$colorBgWhite : #FEFEFE;
+$colorBgBlack: #0B0B0C;
+$colorRed : #A50A26;
+$colorBlue : #2F445C;
+$colorPurple : #75678F;
+$colorFilterPurple : invert(44%) sepia(9%) saturate(1203%) hue-rotate(219deg) brightness(93%) contrast(95%);
 
 @mixin BoxSizing($kindOfBox){
     -webkit-box-sizing: $kindOfBox;
