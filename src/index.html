@@ -26,35 +26,86 @@
         <meta property="og:description" content="Qui est derrière Tatoueur À mes Heures ?"/>
         -->
     </head>
-    <body class="transition_out">
+    <body id="accueil" class="transition_out">
         <header></header>
         <main>
             <h1>Qui est derrière Tatoueur à mes heures ?</h1>
-            <div id="presentation">
-                <div id="presentation_photos">
-                    <p id="photo_index1">
-                        <img src="./ressources/images/index1_250x370.webp" alt="portrait Pippo, dans le salon en train de tatoueur le bras d'un client." width="250" height="370" decoding="async" loading="lazy">
-                    </p>
-                    <p id="photo_index2">
-                        <img src="./ressources/images/index2_250x370.webp" alt="Pippo, dans le salon en train de tatoueur le bras d'un client, vue globale du salon, sur le mur derrière sont accrochés des cadres avec certains de ses dessins." width="250" height="370" decoding="async" loading="lazy">
-                    </p>
+            <section id="presentation_container">
+                <div id="presentation_component">
+                    <div id="presentation_photos">
+                        <p id="photo_index1">
+                            <img src="./ressources/images/index/index1_250x370.webp" alt="portrait Pippo, dans le salon en train de tatoueur le bras d'un client." width="250" height="370" decoding="async" loading="lazy">
+                        </p>
+                        <p id="photo_index2">
+                            <img src="./ressources/images/index/index2_250x370.webp" alt="Pippo, dans le salon en train de tatoueur le bras d'un client, vue globale du salon, sur le mur derrière sont accrochés des cadres avec certains de ses dessins." width="250" height="370" decoding="async" loading="lazy">
+                        </p>
+                    </div>
+                    <div id="presentation_text">
+                        <p>Pippo,</p>
+                        <p>
+                            <span class="body_highlight">Artiste tatoueur</span> formé par des professionnels expérimentés,<span class="display_block">je vous accompagne depuis plus de 20 ans dans la réalisation de vos projets.</span> 
+                        </p>
+                        <p class="body_highlight">Un Tattoo unique !</p>
+                        <p>
+                            Création et personnalisation de vos dessins : emplacement, taille, couleurs, … ;
+                        </p> 
+                        <p>Et, parce que <span class="body_highlight">vous méritez le meilleur !</span></p>
+                        <p>J'utilise des produits de qualité et les dernières technologies de dermographe.</p>
+                        <p>N'hésitez pas à me contacter pour plus d'informations.</p>
+                    </div>
                 </div>
-                <div id="presentation_text">
-                    <p>Pippo,</p>
-                    <p>
-                        <span class="body_highlight">Artiste tatoueur</span> formé par des professionnels expérimentés,<span>je vous accompagne depuis plus de 20 ans dans la réalisation de vos projets.</span> 
-                    </p>
-                    <p class="body_highlight">Un Tattoo unique !</p>
-                    <p>
-                        Création et personnalisation de vos dessins : emplacement, taille, couleurs, … ;
-                    </p> 
-                    <p>Et, parce que <span class="body_highlight">vous méritez le meilleur !</span></p>
-                    <p>J'utilise des produits de qualité et les dernières technologies de dermographe.</p>
-                    <p>N'hésitez pas à me contacter pour plus d'informations.</p>
+            </section>
+            <section id="project_container">
+                <p class="special_font">En attendant de réaliser votre projet : regardez un petit extrait !</p>
+                <div id="project_img">
+                    <div>
+                        <p>
+                            <img src="./ressources/images/index/project_1.webp" alt="corbeau sur épaule de femme en noir et blanc" width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                        <p>
+                            <img src="./ressources/images/index/project_2.webp" alt="jambe thème asiatique couleur " width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="./ressources/images/index/project_3.webp" alt="Pippo tatoue l'avant bras d'un client, project abstrait, formes géométriques" width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                        <p>
+                            <img src="./ressources/images/index/project_4.webp" alt="Dragon en noir et blanc sur main de femme" width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="./ressources/images/index/project_5.webp" alt="Visage abstrait sur main d'homme" width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                        <p>
+                            <img src="./ressources/images/index/project_6.webp" alt="Dragon noir et blanc sur un avant bras de femme" width="150" height="200" decoding="async" loading="lazy">
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fuga aspernatur incidunt debitis ut quis porro corporis eos voluptates earum, aliquid, sapiente amet minus voluptate expedita rem odio! Architecto, omnis.</p>
+                <p id="btn_galerie">
+                    <a href="./galerie.html" class="special_font">Galerie</a>
+                </p>
+            </section>
+            <section id="contact">
+                <!-- CTA: Link Messenger Facebook Pro
+                <a href="https://www.facebook.com/messenger" target="_blank"> 
+                    <img src="images/logos/messenger.svg" alt="https://www.facebook.com/messenger" title="Message">
+                    Message
+                </a> -->
+                <!-- Contact informations -->
+                <!-- <p><b>MAIL :</b> xxxxxxxxx@gmail.com</p>
+                <p><b>TEL :</b> 06 00 00 00 00</p>
+                <p><b>HORAIRES :</b> Lundi au Samedi 12h00 / 19h00</p>
+                <p><b>ADRESSE :</b> 1 Rue du tatouage, 99999 Tattoo</p> -->
+                <!-- Interactive map Google -->
+                <p id="interative_map">
+                    <a href="https://goo.gl/maps/VPSe7Cc6ZzdLAuMG9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85956.5784788269!2d6.410949595254697!3d47.6816412532701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47925b3dd64b7185%3A0xb3c23021ddb8f4b2!2s70200%20Lure!5e0!3m2!1sfr!2sfr!4v1687967027702!5m2!1sfr!2sfr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </p>
+            </section>
+        
         </main>
         <footer></footer>        
     </body>

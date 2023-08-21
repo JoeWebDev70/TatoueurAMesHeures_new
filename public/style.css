@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2) format("woff2");
+  src: url(./ressources/fonts/manrope400.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/manrope/v14/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE9_C-bk.woff2) format("woff2");
+  src: url(./ressources/fonts/manrope700.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pirataone/v22/I_urMpiDvgLdLh0fAtofhi-Org.woff2) format("woff2");
+  src: url(./ressources/fonts/pirataone400.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .transition_out {
@@ -36,7 +36,7 @@
 }
 
 header {
-  padding: 0 30px 0 30px;
+  padding: 5px 30px 0 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,6 +56,20 @@ nav div {
   gap: 15px;
 }
 
+/*current page underline*/
+.current_page {
+  border-bottom: solid 3px #A50A26;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    padding: 5px 30px 15px 30px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -65,6 +79,7 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #FEFEFE;
+  color: #130E0A;
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 400;
@@ -81,13 +96,13 @@ footer span {
   gap: 10px;
 }
 .social_media .facebook {
-  height: 25px;
-  width: 25px;
+  height: 26px;
+  width: 24.6px;
   overflow: hidden;
 }
 .social_media .instagram {
-  height: 25px;
-  width: 25px;
+  height: 26px;
+  width: 26px;
   overflow: hidden;
 }
 .social_media .instagram img {
@@ -95,21 +110,43 @@ footer span {
   margin-left: -25px;
 }
 
-#presentation {
-  padding: 80px 150px;
+@media screen and (max-width: 640px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+section {
+  padding: 80px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.special_font {
+  font-family: "Pirata One";
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#presentation_container {
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FEFEFE;
+}
+
+#presentation_component {
   color: #130E0A;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 110px;
+  gap: 100px;
 }
 
 #presentation_photos {
-  border: solid green;
   width: 50%;
   display: flex;
   justify-content: right;
@@ -124,14 +161,149 @@ footer span {
 }
 
 #presentation_text {
-  border: solid blue;
   width: 50%;
+  min-width: 580px;
+  text-align: center;
+}
+#presentation_text p {
+  margin-top: 25px;
+}
+#presentation_text p:first-child {
+  margin-top: 0;
+}
+#presentation_text p:nth-child(2) span:nth-child(2) {
+  margin-top: 25px;
 }
 
 .body_highlight {
   font-weight: 700;
 }
 
+.display_block {
+  display: block;
+}
+
+#project_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project_img {
+  display: flex;
+  gap: 60px;
+}
+#project_img div {
+  display: flex;
+  gap: 60px;
+}
+#project_img img {
+  border-radius: 12px;
+}
+
+#btn_galerie {
+  margin-top: 60px;
+  text-align: center;
+  width: 215px;
+  padding: 15px 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #2F445C;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+#btn_galerie a {
+  color: #F8F8FF;
+}
+
+#btn_galerie:hover {
+  background-color: #75678F;
+}
+
+#interative_map iframe {
+  width: 100vw;
+}
+
+@media screen and (max-width: 1300px) {
+  #presentation_component {
+    gap: 60px;
+  }
+  #project_img {
+    gap: 40px;
+  }
+  #project_img div {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #presentation_photos {
+    justify-content: center;
+  }
+  #photo_index2 {
+    display: none;
+  }
+  #project_img {
+    gap: 25px;
+  }
+  #project_img div {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 980px) {
+  #presentation_component {
+    gap: 20px;
+  }
+  #presentation_photos {
+    width: auto;
+  }
+  #presentation_text {
+    min-width: 340px;
+  }
+  #presentation_text p {
+    margin-top: 15px;
+  }
+  #presentation_text p:nth-child(2) span:nth-child(2) {
+    margin-top: 15px;
+  }
+  #project_img {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #project_img div {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #presentation_component {
+    gap: 50px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  #presentation_text {
+    min-width: 280px;
+  }
+  #project_img {
+    gap: 25px;
+  }
+  #project_img div {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #project_container > p {
+    width: 60%;
+  }
+  #project_img {
+    gap: 8px;
+  }
+  #project_img div {
+    align-items: center;
+    gap: 8px;
+  }
+}
 :root {
   font-size: 100%;
 }
@@ -142,6 +314,12 @@ body {
   font-weight: 400;
   background-color: #0B0B0C;
   color: #F8F8FF;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -171,4 +349,16 @@ a:hover img {
 
 img {
   display: block;
+}
+
+@media screen and (max-width: 980px) {
+  h1 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    max-width: 280px;
+  }
 }

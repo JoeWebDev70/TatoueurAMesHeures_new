@@ -1,6 +1,6 @@
 //HEADER
 header{
-    padding: 0 30px 0 30px;
+    padding: 5px 30px 0 30px;
     @include BoxSizing(border-box); 
     background-color: $colorBgWhite;
     font-family: 'Manrope';
@@ -17,4 +17,21 @@ nav{
         display: flex;
         gap: 15px;
     }
+}
+
+/*current page underline*/
+.current_page{
+    border-bottom: solid 3px $colorRed;
+}
+
+@media screen and (max-width: 640px){
+    header{
+        padding: 5px 30px 15px 30px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+  
 }

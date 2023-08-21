@@ -6,6 +6,7 @@ footer{
     padding: 40px 30px 40px 30px;
     @include BoxSizing(border-box); 
     background-color: $colorBgWhite;
+    color: $colorBlack;
     font-family: 'Manrope';
     font-size: 16px;
     font-weight: 400;
@@ -23,14 +24,14 @@ footer{
     gap: 10px;
 
     .facebook{
-        height: 25px;
-        width: 25px;
+        height: 26px;
+        width: 24.6px;
         overflow: hidden;
     }
 
     .instagram{
-        height: 25px;
-        width: 25px;
+        height: 26px;
+        width: 26px;
         overflow: hidden;
 
         img{
@@ -38,4 +39,12 @@ footer{
             margin-left: -25px;
         }
     }
+}
+
+@media screen and (max-width: 640px){
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+  
 }
