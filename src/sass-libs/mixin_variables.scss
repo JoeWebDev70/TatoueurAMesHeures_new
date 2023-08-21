@@ -7,6 +7,7 @@ $colorBlue : #2F445C;
 $colorPurple : #75678F;
 $colorFilterPurple : invert(44%) sepia(9%) saturate(1203%) hue-rotate(219deg) brightness(93%) contrast(95%);
 $colorShadow : rgba(255, 255, 255, 0.25);
+$colorBgWhiteShadow: rgba(255, 255, 255, 0.8);
 
 @mixin BoxSizing($kindOfBox){
     -webkit-box-sizing: $kindOfBox;

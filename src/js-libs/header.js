@@ -32,7 +32,7 @@ const aIndexContent = document.createTextNode("Accueil");
 //contact
 const pContact = document.createElement("p");
 const aContact = document.createElement("a");
-aContact.href = "./index.html#contact";
+aContact.href = "./index.html#contact_container";
 aContact.classList.add("link_page");
 const aContactContent = document.createTextNode("Contact");
 //galerie
