@@ -224,6 +224,7 @@ section {
 
 #contact_container {
   width: 100%;
+  padding: 0;
 }
 
 #contact_informations {
@@ -242,7 +243,8 @@ section {
 #contact_informations > div {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
 }
 #contact_informations #messenger {
   width: 25px;
@@ -251,7 +253,7 @@ section {
 }
 #contact_informations #messenger img {
   margin-top: 0;
-  margin-left: -50px;
+  margin-left: -52px;
 }
 #contact_informations span {
   text-transform: uppercase;
@@ -260,6 +262,35 @@ section {
 
 #interative_map iframe {
   width: 100%;
+}
+
+#testimonial_container {
+  display: flex;
+  flex-direction: column;
+}
+#testimonial_container > div {
+  display: flex;
+  gap: 100px;
+}
+
+.testimonial {
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FEFEFE;
+  color: #130E0A;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0 rgba(255, 255, 255, 0.25);
+}
+.testimonial p:nth-child(1) {
+  font-weight: 700;
+}
+.testimonial p:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -286,6 +317,16 @@ section {
   #project_img div {
     gap: 25px;
   }
+  #contact_informations {
+    width: 315px;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 170px;
+    margin-left: 100px;
+  }
+  #testimonial_container > div {
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 980px) {
   #presentation_component {
@@ -310,11 +351,19 @@ section {
   #project_img div {
     gap: 40px;
   }
+  #testimonial_container > div {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 640px) {
   #presentation_component {
     gap: 50px;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  #contact_informations {
+    margin-left: 50px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -327,6 +376,9 @@ section {
   #project_img div {
     gap: 25px;
   }
+  #contact_informations {
+    margin-left: 25px;
+  }
 }
 @media screen and (max-width: 320px) {
   #project_container > p {
@@ -338,6 +390,11 @@ section {
   #project_img div {
     align-items: center;
     gap: 8px;
+  }
+  #contact_informations {
+    width: 300px;
+    padding: 5px;
+    margin-left: 10px;
   }
 }
 :root {

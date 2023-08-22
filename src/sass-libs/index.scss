@@ -118,7 +118,9 @@ $gap_img_project : 60px;
 //CONTACT
 #contact_container{
     width: 100%;
+    padding: 0;
 }
+
 #contact_informations{
     background-color: $colorBgWhiteShadow;
     color: $colorBlack;
@@ -133,7 +135,8 @@ $gap_img_project : 60px;
     >div{
         display: flex;
         justify-content: center;
-        gap: 10px;
+        align-items: center;
+        gap: 5px;
     }
 
     #messenger{
@@ -143,7 +146,7 @@ $gap_img_project : 60px;
 
         img{
             margin-top: 0;
-            margin-left: -50px;
+            margin-left: -52px;
         }
     }
 
@@ -158,6 +161,37 @@ $gap_img_project : 60px;
         width: 100%;
     }
     
+}
+
+//TESTIMONIAL
+#testimonial_container{
+    display: flex;
+    flex-direction: column;
+
+    >div{
+        display: flex;
+        gap: 100px;
+    }
+}
+
+.testimonial{
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    @include BoxSizing(border-box);
+    background-color: $colorBgWhite;
+    color: $colorBlack;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 $colorShadow ;
+
+    p:nth-child(1){
+        font-weight: 700;
+    }
+
+    p:nth-child(2){
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 //RESPONSIVE
@@ -193,6 +227,20 @@ $gap_img_project : 60px;
             gap: $gap_img_project;
         }
     }
+
+    #contact_informations{
+        width: 315px;
+        font-size: 14px;
+        padding: 15px;
+        margin-top: 170px;
+        margin-left: 100px;
+    }
+
+    #testimonial_container{
+        >div{
+            gap: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 980px){
@@ -225,7 +273,14 @@ $gap_img_project : 60px;
             gap: $gap_img_project;
         }
     }
+
+    #testimonial_container{
+        >div{
+            flex-direction: column;
+        }
+    }
 }
+
 
 @media screen and (max-width: 640px){
     #presentation_component{
@@ -234,11 +289,16 @@ $gap_img_project : 60px;
     }
 }
 
+@media screen and (max-width: 450px){
+    #contact_informations{
+        margin-left: 50px;
+    }
+}
+
 @media screen and (max-width: 375px){
 
     #presentation_text{
         min-width: 280px;
-        
     }
 
     $gap_img_project : 25px;
@@ -248,6 +308,10 @@ $gap_img_project : 60px;
         div{
             gap: $gap_img_project;
         }
+    }
+
+    #contact_informations{
+        margin-left: 25px;
     }
 }
 
@@ -266,5 +330,11 @@ $gap_img_project : 60px;
             gap: $gap_img_project;
         }
 
+    }
+
+    #contact_informations{
+        width: 300px;
+        padding: 5px;
+        margin-left: 10px;
     }
 }
