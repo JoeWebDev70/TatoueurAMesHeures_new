@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js-libs/mentions_legales.js":
+/*!*****************************************!*\
+  !*** ./src/js-libs/mentions_legales.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   openLegalMentionPanel: () => (/* binding */ openLegalMentionPanel)\n/* harmony export */ });\nfunction openLegalMentionPanel() {\n  var legalMentions = document.querySelectorAll(\"dt\");\n  legalMentions.forEach(function (legalMention) {\n    legalMention.addEventListener(\"click\", function () {\n      var elementHasActive = document.querySelector(\".active\");\n\n      //Verifier qu'on a trouver un élément et que l'élément trouvé n'est pas celui cliqué\n      if (elementHasActive && this !== elementHasActive) {\n        elementHasActive.classList.remove(\"active\");\n      }\n      //clic à nouveau referme\n      this.classList.toggle(\"active\");\n    });\n  });\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/js-libs/mentions_legales.js?");
+
+/***/ }),
+
 /***/ "./src/script.js":
 /*!***********************!*\
   !*** ./src/script.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\nvar mainGallery = document.querySelector(\"#main_galerie\");\nif (mainGallery != null) {\n  fetch(\"../ressources/loading_img.json\").then(function (reponse) {\n    return reponse.json();\n  }).then(function (data) {\n    data.forEach(function (element) {\n      console.log(element);\n    });\n  });\n}\n\n//# sourceURL=webpack://my-webpack-project/./src/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _js_libs_mentions_legales_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js-libs/mentions_legales.js */ \"./src/js-libs/mentions_legales.js\");\n\n\n\n// const mainGallery = document.querySelector(\"#main_galerie\");\n\n// if (mainGallery != null) {\n//     fetch(\"../ressources/loading_img.json\").then(\n//         reponse => reponse.json()).then(\n//             data => {\n//                 data.forEach(element => {\n//                     console.log(element);\n//                 });\n//             }\n//         )\n// }\n\n(0,_js_libs_mentions_legales_js__WEBPACK_IMPORTED_MODULE_1__.openLegalMentionPanel)();\n\n//# sourceURL=webpack://my-webpack-project/./src/script.js?");
 
 /***/ }),
 
@@ -57,6 +67,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

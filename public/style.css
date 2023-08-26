@@ -55,8 +55,6 @@ nav ul {
 @media screen and (max-width: 640px) {
   header {
     padding: 5px 30px 15px 30px;
-  }
-  nav {
     flex-direction: column;
     gap: 15px;
   }
@@ -152,12 +150,13 @@ footer span {
   margin-top: 25px;
 }
 
-.body_highlight {
-  font-weight: 700;
-}
-
 .display_block {
   display: block;
+}
+
+p[class=special_font],
+a[class=special_font] {
+  margin-bottom: 60px;
 }
 
 #project_container {
@@ -230,10 +229,6 @@ footer span {
 #contact_informations #messenger img {
   margin-top: 0;
   margin-left: -52px;
-}
-#contact_informations span {
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 #interative_map iframe {
@@ -327,6 +322,10 @@ footer span {
   #project_img div {
     gap: 40px;
   }
+  #contact_informations {
+    margin-top: 260px;
+    margin-left: 10px;
+  }
   #testimonial_container > div {
     flex-direction: column;
   }
@@ -335,11 +334,6 @@ footer span {
   #presentation_component {
     gap: 50px;
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 450px) {
-  #contact_informations {
-    margin-left: 50px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -351,9 +345,6 @@ footer span {
   }
   #project_img div {
     gap: 25px;
-  }
-  #contact_informations {
-    margin-left: 25px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -370,7 +361,65 @@ footer span {
   #contact_informations {
     width: 300px;
     padding: 5px;
-    margin-left: 10px;
+  }
+}
+dl {
+  width: 90%;
+  margin: 0;
+}
+dl p {
+  margin-bottom: 5px;
+}
+
+dt {
+  width: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+dt:hover {
+  color: #75678F;
+}
+
+dt.active {
+  color: #2F445C;
+}
+
+dt.active + dd {
+  height: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2F445C;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 30px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link_page {
+  color: #F8F8FF;
+  font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+  dt[class=special_font] {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  dl dd {
+    font-size: 14px;
   }
 }
 :root {
@@ -400,17 +449,28 @@ h1 {
   margin-bottom: 100px;
 }
 
+h2 {
+  margin: 0 0 60px 0;
+}
+
 h2,
 .special_font {
   font-family: "Pirata One";
   font-size: 24px;
   text-align: center;
-  margin: 0 0 60px 0;
   font-weight: 400;
 }
 
 p {
   margin: 0;
+}
+
+.body_highlight {
+  font-weight: 700;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 a {
@@ -429,7 +489,7 @@ img {
   display: block;
 }
 
-section {
+.container {
   padding: 80px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -445,5 +505,7 @@ section {
 @media screen and (max-width: 500px) {
   h1 {
     max-width: 280px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }

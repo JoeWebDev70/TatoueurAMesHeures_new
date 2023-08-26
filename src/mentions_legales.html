@@ -1,72 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- preload fonts -->
-        <link rel="preload" as="font" href="./ressources/fonts/manrope400.woff2" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" as="font" href="./ressources/fonts/manrope700.woff2" type="font/woff2" crossorigin="anonymous">
-        <link rel="preload" as="font" href="./ressources/fonts/pirataone400.woff2" type="font/woff2" crossorigin="anonymous">
-        <!-- favicon + preload-->
-        <link rel="preload" as="image" href="./ressources/images/logos/favicon-16x16.webp" onload="this.rel='shortcut icon'">
-        <noscript>
-            <link rel="shortcut icon" sizes="16x16" href="./ressources/images/logos/favicon-16x16.webp">
-        </noscript>
-        <!-- meta tag google -->
-        <meta name="description" content="Mentions Légales Tatoueur À mes Heures">
-        <!-- Meta Tag : social media -->
-        <!--TODO VERIFIER URL
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- preload fonts -->
+    <link rel="preload" as="font" href="./ressources/fonts/manrope400.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./ressources/fonts/manrope700.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./ressources/fonts/pirataone400.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <!-- favicon + preload-->
+    <link rel="preload" as="image" href="./ressources/images/logos/favicon-16x16.webp"
+        onload="this.rel='shortcut icon'">
+    <noscript>
+        <link rel="shortcut icon" sizes="16x16" href="./ressources/images/logos/favicon-16x16.webp">
+    </noscript>
+    <!-- meta tag google -->
+    <meta name="description" content="Mentions Légales Tatoueur À mes Heures">
+    <!-- Meta Tag : social media -->
+    <!--TODO VERIFIER URL
         <meta property="og:title" content="Tatoueur À mes Heures - Mentions Légales"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://tatoueur-a-mes-heures-new.vercel.app/index.html"/> 
         <meta property="og:image" content="https://tatoueur-a-mes-heures-new.vercel.app/images/index.jpg"/>
         <meta property="og:description" content="Comment Tatoueur À mes Heures vous respecte"/>
         -->
-    </head>
-    <body>
-        <header>
+    <title>Tatoueur À mes Heures - Mentions Legales</title>
+</head>
+
+<body>
+    <header>
+        <p>
+            <a href="./index.html">
+                <img src="./ressources/images/logos/logo_entreprise_100x80.webp" alt="Logo Tatoueur À mes Heures"
+                    width="100" height="80">
+            </a>
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./index.html#contact_container">Contact</a>
+                </li>
+                <li>
+                    <a href="./galerie.html">Galerie</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Mentions Légales</h1>
+        <dl>
+            <dt class="special_font">1. Présentation du site</dt>
+            <dd>
+                <p>
+                    En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie
+                    numérique, il est précisé aux utilisateurs du site internet https://TatoueurAMesHeures.xx l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
+                </p>
+                <p class="subtitle">Propriétaire</p>
+                <p><span class="body_highlight">Gérant :</span> Pippo Pluto (Tatoueur À mes Heures)</p>
+                <p><span class="body_highlight">Forme juridique :</span> Entrepreneur individuel</p>
+                <p><span class="body_highlight">Adresse :</span> 1 Rue du tatouage, 99999 Tattoo</p>
+                <p><span class="body_highlight">Tel :</span> 06 00 00 00 00</p>
+                <p id="contact_mail"><span class="body_highlight">Mail :</span> xxxxxxxxx@gmail.com</p>
+                <p>
+                    <span class="body_highlight">Responsable publication / Délégué à la protection des données :</span> Pippo Pluto (Tatoueur À mes Heures)
+                </p>
+                <p class="subtitle">Hébergeur et créateur</p>
+                <p><span class="body_highlight">Créateur du site :</span> Joelle Moureu</p>
+                <p><span class="body_highlight">Hébergeur Code / site :</span> Github et Vercel</p>
+                <p>
+                    <span class="body_highlight">Siège social de l'hébergeur :</span> Ceci est un site d'entrainement
+                </p>
+                <p id="contact_hebergeur">
+                    <span class="body_highlight">Contacter : </span> 
+                    <a href="https://docs.github.com/en/support/contacting-github-support" target="_blank" class="link_page">Github</a>
+                    <a href="https://vercel.com/contact" target="_blank" class="link_page"> Vercel</a>
+                </p>
+                <p>
+                    <a href="https://github.com/JoeWebDev70/TatoueurAMesHeures_new" target="_blank" class="body_highlight link_page">Acceder au code</a>
+                </p>
+                <p><span class="body_highlight">Localisation géographique des serveurs :</span> France</p>
+                <p class="upper">
+                    <span class="body_highlight">attention : </span>ce site est un site d'entrainement pour la formation au métier de développeur web</p>
+            </dd>
+
+            <dt class="special_font">2. Lexique</dt>
+            <dd>
+                <p>
+                    <span class="body_highlight">L'Éditeur :</span> La personne, physique ou morale, qui édite les services de communication au public en ligne ici désigné par Tatoueur À mes Heures.
+                </p>
+                <p>
+                    <span class="body_highlight">Le Site :</span> L'ensemble des sites, pages Internet et services en ligne proposés par l'Éditeur ici connu avec l'URL principal https://TatoueurAMesHeures.xx
+            </p>
             <p>
-                <a href="./index.html" class="link_page">
-                    <img src="./ressources/images/logos/logo_entreprise_100x80.webp" alt="Logo Tatoueur À mes Heures" width="100" height="80">
+                <span class="body_highlight">Utilisateur :</span> Internaute se connectant, utilisant le site susnommé.
+            </p>
+            <p>
+                <span class="body_highlight">Service :</span> le service https://TatoueurAMesHeures.xx et l'ensemble de ses contenus.
+            </p>
+            <p>
+                <span class="body_highlight">Informations personnelles :</span> « toute information se rapportant à une personne physique identifiée ou
+                identifiable. » 
+                <a href="https://www.cnil.fr/fr/definition/donnee-personnelle" target="_blank"  class="link_page">Définition CNIL</a>
+            </p>
+            <p>
+                <span class="body_highlight">Cookie :</span> Fichier de petite taille qui enregistre des informations relatives à la navigation d'un utilisateur sur un site. Les cookies peuvent être utilisés pour des fins statistiques notamment pour optimiser les services rendus à l'Utilisateur, à partir du traitement des informations concernant la fréquence d'accès, la personnalisation des pages ainsi que les opérations réalisées et les informations consultées.
+            </p>
+            </dd>
+
+            <dt class="special_font">3. Conditions générales d'utilisation du site et des services proposés</dt>
+            <dd>
+                <p>
+                    L'utilisation du site implique l'acceptation pleine et entière des conditions générales d'utilisation ci-après décrites. Ces conditions d'utilisation sont susceptibles d'être modifiées ou complétées à tout moment, les utilisateurs du site sont donc invités à les consulter de manière régulière. 
+                </p>
+                <p>
+                    Ce site est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Tatoueur À mes Heures, qui s'efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l'intervention.
+                </p>
+            </dd>
+
+            <dt class="special_font">4. Description des services fournis</dt>
+            <dd>
+                Le site https://TatoueurAMesHeures.xx a pour objet de fournir une information concernant l'ensemble des activités de Tatoueur À mes Heures.
+            </dd>
+
+            <dt class="special_font">5. Limitation de responsabilité</dt>
+            <dd>
+                <p>
+                    Tatoueur À mes Heures s'efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Toutes les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles d'évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne. Tatoueur À mes Heures décline toute responsabilité quant à l'utilisation qui pourrait être faite des informations et contenus présents sur le site.
+                </p>
+                <p>
+                    Tatoueur À mes Heures ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site https://TatoueurAMesHeures.xx. Tatoueur À mes Heures s'engage à sécuriser au mieux le site https://TatoueurAMesHeures.xx, cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur son site à son insu. De plus, l'utilisateur s'engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour. Si vous constatez une erreur ou ce qui peut être un dysfonctionnement, merci de bien vouloir le signaler par email en décrivant le problème de la manière la plus précise possible.
+                </p>
+                <p>
+                    Des espaces interactifs (liens hypertexte) conduisant aux réseaux sociaux de Tatoueur À mes Heures sont à la disposition des utilisateurs. Tatoueur À mes Heures décline toute responsabilité quant à l'usage et aux conséquences de l'utilisation des sites aux quels l'utilisateur à accès grâce à dits liens hypertexte. Tatoueur À mes Heures se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans ces espaces qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, Tatoueur À mes Heures se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l'utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
+                </p>
+            </dd>
+
+            <dt class="special_font">6. Propriété intellectuelle et contrefaçons</dt>
+            <dd>
+                <p>
+                    Tatoueur À mes Heures est propriétaire des droits de propriété intellectuelle et détient les droits d'usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, architecture, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Tatoueur À mes Heures. Toute exploitation non autorisée du site ou d'un quelconque élément qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
+                </p>
+                <p class="subtitle"> Credits photos, logo et icones</p>
+                <p>
+                    Logo réalisé avec : 
+                    <a href="https://www.freelogodesign.org/" target="_blank" class="link_page">freelogodesign.org</a>
+                </p>
+                <p>
+                    photos designed by 
+                    <a href="https://www.pexels.com/" target="_blank" class="link_page">pexels.com</a>
+                </p>
+                <p>
+                    Favicon généré avec : 
+                    <a href="https://redketchup.io/favicon-generator" target="_blank" class="link_page">favicon-generator</a>
+                </p>
+            </dd>
+
+            <dt class="special_font">7. Gestion des données personnelles et techniques</dt>
+            <dd>
+                <p>
+                    En France, les données personnelles sont notamment protégées par la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l'article L. 226-13 du Code pénal et la Directive Européenne du 24 octobre 1995. La consultation du Site ne nécessite pas d'inscription ni d'identification préalable. Elle peut s'effectuer sans que vous ne communiquiez de données nominatives vous concernant (nom, prénom, adresse, etc). 
+                </p>
+                <p>
+                    Le site n'est pas déclaré à la CNIL car Tatoueur À mes Heures ne procède à aucun enregistrement de données nominatives pour l'utilisation du dit site. Tatoueur À mes Heures s'engage à avertir l'utilisateur en cas de changement de cette politique.
+                </p>
+                <p>
+                    Certaines des données techniques de votre appareil sont collectées automatiquement par le site car elles sont nécessaires pour la fourniture des services et à l'hébergeur (Vercel) à des fins de statistique d'accès et de performance. Ces informations incluent notamment votre adresse IP, fournisseur d'accès à Internet, configuration matérielle, configuration logicielle, type et langue du navigateur, l'O.S, la géolocalisation... En naviguant sur le site, l'utilisateur accepte la collecte de dites données, et à leur élaboration par l'hébergeur. Les données techniques sont conservées pour la durée strictement nécessaire à la réalisation des finalités visées ci-avant. Pour plus d'information nous vous invitons à <a href="#contact_hebergeur" class="link_page">contacter</a> l'hébergeur.
+                </p>
+                <p>
+                    Aucune information collectée sur le site https://TatoueurAMesHeures.xx n'est publiée à l'insu de
+                    l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Vous êtes toutefois informés que certaines informations pourront être divulguées en application d'une loi, d'un règlement ou en vertu d'une décision d'une autorité réglementaire ou judiciaire compétente. Dans l'hypothèse du rachat de Tatoueur À mes Heures et de ses droits, la transmission des dites informations serait permise à l'éventuel acquéreur qui serait à son tour tenu aux mêmes obligations légales envers l'utilisateur.Tatoueur À mes Heures s'engage à informer l'utilisateur en cas de modification substantielle aux présentes déclarations, et à ne pas baisser le niveau de confidentialité de manière substantielle sans en informer et obtenir votre consentement de l'utilisateur.
+                </p>
+                <p>
+                    En cas de problème technique ou pour tout autre demande nous vous invitons à nous contacter par <a href="#contact_mail">mail.</a>
+                </p>
+            </dd>
+
+            <dt class="special_font">8. Liens hypertextes et cookies</dt>
+            <dd>
+                Le site https://TatoueurAMesHeures.xx n'utilise pas de cookies, il s'agit d'un site d'information. Le site contient cependant des liens hypertextes vers d'autres sites, mis en place avec  l'autorisation Tatoueur À mes Heures. Tatoueur À mes Heures dégage toute responsabilité à propos de ces liens externes  ou des liens créés par dautres sites vers https://TatoueurAMesHeures.xx et vous invite à vous référer aux politiques de confidentialité et gestion des cookies des sites externes.
+            </dd>
+            
+            <dt class="special_font">9. Les principales lois concernées</dt>
+            <dd>
+                <p>
+                    Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n° 2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et aux libertés. 
+                    <a href="https://www.legifrance.gouv.fr/loda/id/LEGISCTA000006095882" target="_blank" class="link_page"> Legifrance.gouv</a> 
+                    <a href="https://www.cnil.fr/fr/la-loi-informatique-et-libertes" target="_blank" class="link_page"> CNIL.fr</a>
+                </p>
+                <p>
+                    Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique. 
+                    <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164" target="_blank" class="link_page"> Legifrance.gouv</a> 
+                </p>
+                <p>
+                    Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016, relatif à la protectiondes personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données, et abrogeant la directive 95/46/CE. Le règlement général sur la protection des données - RGPD du 23 mai 2018. 
+                    <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank" class="link_page"> CNIL.fr</a>
+                </p>
+            </dd>
+
+            <dt class="special_font">10. Droit applicable, attribution de juridiction et modalités de recours</dt>
+            <dd>
+                Tout litige en relation avec l'utilisation du site https://TatoueurAMesHeures.xx est soumis au droit
+                français. En cas de litige, les parties chercheront une solution amiable avant toute action judiciaire. En cas d'échec de ces tentatives, toutes contestations à la validité, l'interprétation et / ou l'exécution des mentions légales ci-dessus devront être portées devant les tribunaux français.
+            </dd>
+        </dl>
+    </main>
+    <footer>
+        <p>
+            <a href="./mentions_legales.html">Mentions Légales</a>
+        </p>
+        <p>
+            <a href="./index.html"><span>Tatoueur À mes Heures</span> &copy; 2023</a>
+        </p>
+        <div class="social_media">
+            <p class="facebook">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./ressources/images/logos/logos_25x25.webp"
+                        alt="Logo Facebook, liens vers les réseaux sociaux https://www.facebook.com">
                 </a>
             </p>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html" class="link_page current_page">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#contact_container" class="link_page">Contact</a>
-                    </li>
-                    <li>
-                        <a href="./galerie.html" class="link_page">Galerie</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>Mentions Légales</p>
-        </main>
-        <footer>
-            <p>
-                <a href="./mentions_legales.html" class="link_page">Mentions Légales</a>
+            <p class="instagram">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./ressources/images/logos/logos_25x25.webp"
+                        alt="Logo Instagram, liens vers les réseaux sociaux https://www.instagram.com">
+                </a>
             </p>
-            <p>
-                <a href="./index.html" class="link_page"><span>Tatoueur À mes Heures</span> &copy 2023</a>
-            </p>
-            <div class="social_media">
-                <p class="facebook">
-                    <a href="https://www.facebook.com" class="link_page">
-                        <img src="./ressources/images/logos/logos_25x25.webp" alt="Logo Facebook, liens vers les réseaux sociaux https://www.facebook.com">
-                    </a>
-                </p>
-                <p class="instagram">
-                    <a href="https://www.instagram.com" class="link_page">
-                        <img src="./ressources/images/logos/logos_25x25.webp" alt="Logo Instagram, liens vers les réseaux sociaux https://www.instagram.com">
-                    </a>
-                </p>
-            </div>            
-        </footer>    
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>

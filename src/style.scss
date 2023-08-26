@@ -3,6 +3,8 @@
 @import "./sass-libs/header.scss";
 @import "./sass-libs/footer.scss";
 @import "./sass-libs/index.scss";
+@import "./sass-libs/mentions_legales.scss";
+
 
 :root{
     font-size: 100%;
@@ -31,16 +33,28 @@ h1{
     margin-bottom: 100px;
 }
 
+h2{
+    margin: 0 0 60px 0;
+}
+
 h2,
 .special_font{
     font-family: 'Pirata One';
     font-size: 24px;
     text-align: center;
-    margin: 0 0 60px 0;
     font-weight: 400;
 }
+
 p{
     margin: 0;
+}
+
+.body_highlight{
+    font-weight: 700;
+}
+
+.upper{
+    text-transform: uppercase;
 }
 
 a{
@@ -61,7 +75,8 @@ img{
 }
 
 
-section{
+
+.container{
     padding: 80px 0;
     @include BoxSizing(border-box);
 }
@@ -78,5 +93,7 @@ section{
 @media screen and (max-width: 500px) {
     h1 {
         max-width: 280px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }

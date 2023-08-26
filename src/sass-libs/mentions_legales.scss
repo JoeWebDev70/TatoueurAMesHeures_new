@@ -1,0 +1,62 @@
+dl{
+    width: 90%;
+    margin: 0;
+
+    p{
+        margin-bottom: 5px;
+    }
+}
+
+dt{
+    width: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+dt:hover{
+    color: $colorPurple;
+}
+
+dt.active{
+    color: $colorBlue;
+}
+
+dt.active + dd{
+    height: auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $colorBlue;
+}
+
+dd{
+    margin-left: 0;
+    margin-bottom: 30px;    
+    height: 0px;   
+    overflow: hidden;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link_page{
+    color: $colorWhite;
+    font-style: italic;
+}
+
+@media screen and (max-width: 750px) {
+    dt[class='special_font']{
+        font-size: 20px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+
+    dl dd{
+        font-size: 14px;
+    }
+}

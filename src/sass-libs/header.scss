@@ -30,9 +30,6 @@ nav{
 @media screen and (max-width: 640px){
     header{
         padding: 5px 30px 15px 30px;
-    }
-
-    nav{
         flex-direction: column;
         gap: 15px;
     }
