@@ -1,14 +1,4 @@
-section{
-    padding: 80px 0;
-    @include BoxSizing(border-box);
-}
 
-.special_font{
-    font-family: 'Pirata One';
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 60px;
-}
 
 //PRESENTATION
 $margin_line_txt : 25px;
@@ -118,7 +108,6 @@ $gap_img_project : 60px;
 //CONTACT
 #contact_container{
     width: 100%;
-    padding: 0;
 }
 
 #contact_informations{

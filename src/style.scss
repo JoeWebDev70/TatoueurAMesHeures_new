@@ -1,6 +1,5 @@
 @import "./sass-libs/fonts.scss";
 @import "./sass-libs/mixin_variables.scss";
-@import "./sass-libs/transition.scss";
 @import "./sass-libs/header.scss";
 @import "./sass-libs/footer.scss";
 @import "./sass-libs/index.scss";
@@ -32,6 +31,14 @@ h1{
     margin-bottom: 100px;
 }
 
+h2,
+.special_font{
+    font-family: 'Pirata One';
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-weight: 400;
+}
 p{
     margin: 0;
 }
@@ -51,6 +58,12 @@ a:hover{
 
 img{
     display: block;
+}
+
+
+section{
+    padding: 80px 0;
+    @include BoxSizing(border-box);
 }
 
 
