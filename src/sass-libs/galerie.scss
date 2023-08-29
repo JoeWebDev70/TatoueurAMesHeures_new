@@ -1,0 +1,111 @@
+#main_galerie{
+    h1{
+        margin-bottom: 0;
+    }
+}
+
+.photo_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 5px;
+    }
+}
+
+#bras,
+#jambe,
+#dos,
+#torse{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: repeat(3, 250px);
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+#visage{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: 250px;
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+#dessin{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: repeat(2, 250px);
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+
+
+//RESPONSIVE
+@media screen and (max-width: 1200px) {
+
+    #bras,
+    #jambe,
+    #dos,
+    #torse,
+    #visage,
+    #dessin {
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #bras,
+    #jambe,
+    #dos,
+    #torse{
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(3, 190px);
+
+    }
+    
+    #visage{
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 190px;
+    }
+    
+    #dessin{
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 190px);
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    #bras,
+    #jambe,
+    #dos,
+    #torse,
+    #visage,
+    #dessin {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    #bras,
+    #jambe,
+    #dos,
+    #torse,
+    #visage,
+    #dessin {
+        width: 250px;
+        height: auto;
+    }
+}

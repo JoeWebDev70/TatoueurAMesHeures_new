@@ -3,11 +3,16 @@
 @import "./sass-libs/header.scss";
 @import "./sass-libs/footer.scss";
 @import "./sass-libs/index.scss";
+@import "./sass-libs/galerie.scss";
 @import "./sass-libs/mentions_legales.scss";
 
 
 :root{
     font-size: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
