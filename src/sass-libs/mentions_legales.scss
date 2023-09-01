@@ -3,13 +3,13 @@ dl{
     margin: 0;
 
     p{
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
     }
 }
 
 dt{
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     cursor: pointer;
 }
 
@@ -23,23 +23,23 @@ dt.active{
 
 dt.active + dd{
     height: auto;
-    padding-bottom: 15px;
-    border-bottom: 1px solid $colorBlue;
+    padding-bottom: 0.9375rem;
+    border-bottom: 0.0625rem solid $colorBlue;
 }
 
 dd{
     margin-left: 0;
-    margin-bottom: 30px;    
-    height: 0px;   
+    margin-bottom: 1.875rem;    
+    height: 0;   
     overflow: hidden;
 }
 
 .subtitle{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     text-decoration: underline;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
 }
 
 .link_page{
@@ -49,14 +49,14 @@ dd{
 
 @media screen and (max-width: 750px) {
     dt[class='special_font']{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .subtitle{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     dl dd{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }

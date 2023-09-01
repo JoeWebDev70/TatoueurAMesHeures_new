@@ -26,26 +26,44 @@ function loadDataImage(target, intersect) {
                 switch (data[i].class) {
                     case "bras":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("bras");
                         break;
                     case "jambe":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("jambe");
                         break;
                     case "visage":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("visage");
                         break;
                     case "dessin":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("dessin");
                         break;
                     case "dos":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("dos");
                         break;
                     case "torse":
                         img.src = data[i].url;
+                        img.alt = data[i].alt;
+                        img.width = "330";
+                        img.height = "250";
                         p.classList.add("torse");
                         break;
                 }
