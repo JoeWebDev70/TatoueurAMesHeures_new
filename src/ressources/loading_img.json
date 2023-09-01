@@ -1,183 +1,228 @@
 [
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras01.webp"
+        "url": "./ressources/images/galerie/bras01.webp",
+        "alt": "Photo en noir et blanc. Pippo tatoue un dragon sur un bras droit."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras02.webp"
+        "url": "./ressources/images/galerie/bras02.webp",
+        "alt": "Photo en couleur. Avant bras thème asiatique carpes en couleur."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras03.webp"
+        "url": "./ressources/images/galerie/bras03.webp",
+        "alt": "Photo en couleur. Avant bras thème espace et nature en noir et blanc. "
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras04.webp"
+        "url": "./ressources/images/galerie/bras04.webp",
+        "alt": "Photo en couleur. Avant bras thème old school en noir et blanc."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras05.webp"
+        "url": "./ressources/images/galerie/bras05.webp",
+        "alt": "Photo en couleur. Avant bras thème géométrique en noir et blanc."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras06.webp"
+        "url": "./ressources/images/galerie/bras06.webp",
+        "alt": "Photo en couleur. Bras thème asiatique en couleur."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras07.webp"
+        "url": "./ressources/images/galerie/bras07.webp",
+        "alt": "Photo en couleur. Biceps fleur de lys en noir et blanc."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras08.webp"
+        "url": "./ressources/images/galerie/bras08.webp",
+        "alt": "Photo en couleur. Coude thème abstrait en couleur."
     },
     {
         "class": "bras",
-        "url": "./ressources/images/galerie/bras09.webp"
+        "url": "./ressources/images/galerie/bras09.webp",
+        "alt": "Photo en couleur. Avant bras thème mort espagnole old school en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes01.webp"
+        "url": "./ressources/images/galerie/jambes01.webp",
+        "alt": "Photo en couleur. Genou thème asiatique en couleur."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes02.webp"
+        "url": "./ressources/images/galerie/jambes02.webp",
+        "alt": "Photo en couleur. Cuisse bateau pirate old school en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes03.webp"
+        "url": "./ressources/images/galerie/jambes03.webp",
+        "alt": "Photo en couleur. Jambe thème asiatique en couleur."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes04.webp"
+        "url": "./ressources/images/galerie/jambes04.webp",
+        "alt": "Photo en couleur. Cuisse thème mort espagnole old school en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes05.webp"
+        "url": "./ressources/images/galerie/jambes05.webp",
+        "alt": "Photo en couleur. Rose sur cuisse en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes06.webp"
+        "url": "./ressources/images/galerie/jambes06.webp",
+        "alt": "Photo en couleur. Portrait sur cuisse en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes07.webp"
+        "url": "./ressources/images/galerie/jambes07.webp",
+        "alt": "Photo en noir et blanc. Cuisse abstrait old school en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes08.webp"
+        "url": "./ressources/images/galerie/jambes08.webp",
+        "alt": "Photo en couleur. Coeur formé de lettre sur cuisse en noir et blanc."
     },
     {
         "class": "jambe",
-        "url": "./ressources/images/galerie/jambes09.webp"
+        "url": "./ressources/images/galerie/jambes09.webp",
+        "alt": "Photo en couleur. Pieuvre sur mollet en noir et blanc."
     },
     {
         "class": "visage",
-        "url": "./ressources/images/galerie/visage01.webp"
+        "url": "./ressources/images/galerie/visage01.webp",
+        "alt": "Photo en noir et blanc. Thème florale sur cou et joue femme en noir et blanc."
     },
     {
         "class": "visage",
-        "url": "./ressources/images/galerie/visage02.webp"
+        "url": "./ressources/images/galerie/visage02.webp",
+        "alt": "Photo en noir et blanc. Thème florale sourcil homme en noir et blanc."
     },
     {
         "class": "visage",
-        "url": "./ressources/images/galerie/visage03.webp"
+        "url": "./ressources/images/galerie/visage03.webp",
+        "alt": "Photo en couleur. Tribal bouche homme en noir et blanc."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin01.webp"
+        "url": "./ressources/images/galerie/dessin01.webp",
+        "alt": "Photo en couleur. Dessin hirondelle en noir et blanc."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin02.webp"
+        "url": "./ressources/images/galerie/dessin02.webp",
+        "alt": "Photo en couleur. Pippo en train de dessiner."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin03.webp"
+        "url": "./ressources/images/galerie/dessin03.webp",
+        "alt": "Photo en couleur. Croquis têtes de singe en noir et blanc."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin04.webp"
+        "url": "./ressources/images/galerie/dessin04.webp",
+        "alt": "Photo en couleur. dessin floral abstrait en noir et blanc."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin05.webp"
+        "url": "./ressources/images/galerie/dessin05.webp",
+        "alt": "Photo en couleur. Dessin tête de diable en noir et blanc."
     },
     {
         "class": "dessin",
-        "url": "./ressources/images/galerie/dessin06.webp"
+        "url": "./ressources/images/galerie/dessin06.webp",
+        "alt": "Photo en couleur. Dessin samourai cartoon en noir et blanc."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos01.webp"
+        "url": "./ressources/images/galerie/dos01.webp",
+        "alt": "Photo en couleur. Dos thème asiatique en couleur."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos02.webp"
+        "url": "./ressources/images/galerie/dos02.webp",
+        "alt": "Photo en couleur. Dos old school en noir et blanc."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos03.webp"
+        "url": "./ressources/images/galerie/dos03.webp",
+        "alt": "Photo en couleur. Dos thème asiatique en noir et blanc."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos04.webp"
+        "url": "./ressources/images/galerie/dos04.webp",
+        "alt": "Photo en couleur. Pippo en train de tatouer le dos d'un client"
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos05.webp"
+        "url": "./ressources/images/galerie/dos05.webp",
+        "alt": "Photo en couleur. Ecriture orientale en milieu de dos en noir et blanc."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos06.webp"
+        "url": "./ressources/images/galerie/dos06.webp",
+        "alt": "Photo en couleur. Dos thème géométrique abstrait en couleur."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos07.webp"
+        "url": "./ressources/images/galerie/dos07.webp",
+        "alt": "Photo en couleur. Mandala milieu de dos en couleur."
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos08.webp"
+        "url": "./ressources/images/galerie/dos08.webp",
+        "alt": "Photo en couleur. Mandala milieu de dos en noir et blanc"
     },
     {
         "class": "dos",
-        "url": "./ressources/images/galerie/dos09.webp"
+        "url": "./ressources/images/galerie/dos09.webp",
+        "alt": "Photo en couleur. Le sourir et les yeux du chat de alice au pays des merveilles en couleur."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse01.webp"
+        "url": "./ressources/images/galerie/torse01.webp",
+        "alt": "Photo en couleur. Mains qui se rejoignent au milieu du torse en noir et blanc"
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse02.webp"
+        "url": "./ressources/images/galerie/torse02.webp",
+        "alt": "Photo en couleur. Fleur orientale milieu de poitrine femme en couleur."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse03.webp"
+        "url": "./ressources/images/galerie/torse03.webp",
+        "alt": "Photo en couleur. Aigle old school torse complet en noir et blanc."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse04.webp"
+        "url": "./ressources/images/galerie/torse04.webp",
+        "alt": "Photo en couleur. Croix pectoral gauche noir et blanc."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse05.webp"
+        "url": "./ressources/images/galerie/torse05.webp",
+        "alt": "Photo en couleur. Symbole entouré d'écriture épaule gauche homme en couleur."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse06.webp"
+        "url": "./ressources/images/galerie/torse06.webp",
+        "alt": "Photo en couleur. Coeur couleur avec ailes noir et blanc + écritures torse complet homme."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse07.webp"
+        "url": "./ressources/images/galerie/torse07.webp",
+        "alt": "Photo en noir et blanc. Cerbère torse complet homme en noir et blanc."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse08.webp"
+        "url": "./ressources/images/galerie/torse08.webp",
+        "alt": "Photo en couleur. Tête de jésus pectoral gauche homme en couleur."
     },
     {
         "class": "torse",
-        "url": "./ressources/images/galerie/torse09.webp"
+        "url": "./ressources/images/galerie/torse09.webp",
+        "alt": "Photo en couleur. Fleur en couleur et écriture noir et blanc épaule gauche femme."
     }
   ]
   
