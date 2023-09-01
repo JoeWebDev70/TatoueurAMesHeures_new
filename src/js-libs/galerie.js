@@ -1,69 +1,72 @@
-// var options = {
-//     root: document.querySelector("#scrollArea"),
-//     rootMargin: "0px",
-//     threshold: 1.0,
-//   };
-  
-//   var observer = new IntersectionObserver(callback, options);
+export function observeAndDisplay(){
 
+    const observer = new IntersectionObserver(function (entries) {
+        for (const entry of entries) {
+            loadDataImage(entry.target, entry.isIntersecting);
+        }
+    });
 
-const observer = new IntersectionObserver(function(entries){
-    console.log("entries", entries);
-});
+    const photoContainers = document.querySelectorAll(".photo_container");
+    photoContainers.forEach(function (photoContainer) {
+        observer.observe(photoContainer);
+    });
 
-const mainGallery = document.querySelector("#main_galerie");
-const photoContainers = document.querySelectorAll("photo_container");
-photoContainers.forEach(function(photoContainer) {
-    observer.observe(photoContainer);
-});
+}
 
-
-if (mainGallery != null) {
+function loadDataImage(target, intersect) {
     fetch("../ressources/loading_img.json")
-    .then(reponse => reponse.json())
-    .then(data => {
-                for (let i = 0; i < data.length; i++) {
-                    const p = document.createElement("p");
-                    const img = document.createElement("img");
-                    switch (data[i].class) {
-                        case "bras":
-                            const brasContainer = document.querySelector("#bras");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            brasContainer.appendChild(p);
-                            break;
-                        case "jambe":
-                            const jambeContainer = document.querySelector("#jambe");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            jambeContainer.appendChild(p);
-                            break;
-                        case "visage":
-                            const visageContainer = document.querySelector("#visage");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            visageContainer.appendChild(p);
-                            break;
-                        case "dessin":
-                            const dessinContainer = document.querySelector("#dessin");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            dessinContainer.appendChild(p);
-                            break;
-                        case "dos":
-                            const dosContainer = document.querySelector("#dos");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            dosContainer.appendChild(p);
-                            break;
-                        case "torse":
-                            const torseContainer = document.querySelector("#torse");
-                            p.appendChild(img);
-                            img.src = data[i].url;
-                            torseContainer.appendChild(p);
-                            break;
-                    }
-
+        .then(function (reponse) {
+            if (reponse.ok) { return reponse.json() }
+        })
+        .then(data => {
+            for (let i = 0; i < data.length; i++) {
+                const p = document.createElement("p");
+                const img = document.createElement("img");
+                p.appendChild(img);
+                switch (data[i].class) {
+                    case "bras":
+                        img.src = data[i].url;
+                        p.classList.add("bras");
+                        break;
+                    case "jambe":
+                        img.src = data[i].url;
+                        p.classList.add("jambe");
+                        break;
+                    case "visage":
+                        img.src = data[i].url;
+                        p.classList.add("visage");
+                        break;
+                    case "dessin":
+                        img.src = data[i].url;
+                        p.classList.add("dessin");
+                        break;
+                    case "dos":
+                        img.src = data[i].url;
+                        p.classList.add("dos");
+                        break;
+                    case "torse":
+                        img.src = data[i].url;
+                        p.classList.add("torse");
+                        break;
                 }
-            }).catch(error => console.error('Erreur de chargement JSON :', error));
+
+                if (target && intersect) {
+                    const tmpContainer = document.querySelector(`#${target.id}`);
+                    if (p.classList.contains(target.id)) {
+                        tmpContainer.appendChild(p);
+                    }
+                }
+                else {
+                    const tmpContainer = document.querySelector(`#${target.id}`);
+                    
+                    if (tmpContainer.childNodes.length > 0) {
+                        const photosToRemove = document.querySelectorAll(`.${target.id}`);
+                        photosToRemove.forEach(function (photoToRemove) {
+                            tmpContainer.removeChild(photoToRemove);
+                        });
+                    }
+                }
+            }
+
+        }).catch(error => console.log('Erreur de chargement JSON :', error));
 }
