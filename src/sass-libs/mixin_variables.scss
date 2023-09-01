@@ -14,3 +14,10 @@ $colorBgWhiteShadow: rgba(255, 255, 255, 0.8);
     -moz-box-sizing: $kindOfBox;
     box-sizing: $kindOfBox;
 }
+
+@mixin Rotate($turn: -0.25turn){
+    transform: rotate($turn);
+    -webkit-transform: rotate($turn);
+    -moz-transform: rotate($turn);
+    -o-transform: rotate($turn);
+}

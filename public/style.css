@@ -1,6 +1,7 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
+@charset "UTF-8";
 @font-face {
   font-family: "Manrope";
   font-style: normal;
@@ -459,7 +460,7 @@ a[class=special_font] {
   }
 }
 dl {
-  width: 90%;
+  width: 70%;
   margin: 0;
 }
 dl p {
@@ -517,6 +518,51 @@ dd {
     font-size: 14px;
   }
 }
+a.back_to_top {
+  border-radius: 5px;
+  padding: 5px 13px 5px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 42px;
+  text-align: center;
+  color: #130E0A;
+  background: #FEFEFE;
+  position: fixed;
+  right: 50%;
+  opacity: 1;
+  z-index: 1000;
+  transition: all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+a.back_to_top::before {
+  content: "➜";
+  display: inline-block;
+  transform: rotate(-0.25turn);
+  -webkit-transform: rotate(-0.25turn);
+  -moz-transform: rotate(-0.25turn);
+  -o-transform: rotate(-0.25turn);
+}
+
+a.back_to_top:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transition: all ease-in 0.2s;
+}
+
+a.back_to_top.item_hide {
+  bottom: -35px;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+
+a.back_to_top.item_show {
+  bottom: 20px;
+  opacity: 1;
+}
+
 :root {
   font-size: 100%;
 }
