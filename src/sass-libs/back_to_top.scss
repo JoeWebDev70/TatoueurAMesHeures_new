@@ -1,9 +1,9 @@
 
 a.back_to_top{
-    border-radius: 5px;
-    padding: 5px 13px 5px 10px;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.8125rem 0.3125rem 0.625rem;
     @include BoxSizing(border-box);
-    font-size: 42px;
+    font-size: 2.625rem;
     text-align: center;
     color: $colorBlack;
     background: $colorBgWhite;
@@ -29,12 +29,12 @@ a.back_to_top{
     transition: all ease-in 0.2s;
   }
   a.back_to_top.item_hide{
-    bottom: -35px;
+    bottom: -2.1875rem;
     opacity: 0;
     transition: all ease-in 0.5s;
   }
   
   a.back_to_top.item_show{
-    bottom: 20px;
+    bottom: 1.25rem;
     opacity: 1;
   }

@@ -1,10 +1,10 @@
 //HEADER
 header{
-    padding: 5px 30px 0 30px;
+    padding: 0.3125rem 1.875rem 0 1.875rem;
     @include BoxSizing(border-box); 
     background-color: $colorBgWhite;
     font-family: 'Manrope';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ header{
 nav{
     ul{
         display: flex;
-        gap: 15px;
+        gap: 0.9375rem;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -29,9 +29,9 @@ nav{
 
 @media screen and (max-width: 640px){
     header{
-        padding: 5px 30px 15px 30px;
+        padding: 0.3125rem 1.875rem 0.9375rem 1.875rem;
         flex-direction: column;
-        gap: 15px;
+        gap: 0.9375rem;
     }
   
 }

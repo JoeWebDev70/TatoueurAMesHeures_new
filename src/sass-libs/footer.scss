@@ -3,17 +3,17 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 30px 40px 30px;
+    padding: 2.5rem 1.875rem 2.5rem 1.875rem;
     @include BoxSizing(border-box); 
     background-color: $colorBgWhite;
     color: $colorBlack;
     font-family: 'Manrope';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 
     span{
         font-family: 'Pirata One';
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
     }
 }
@@ -21,10 +21,10 @@ footer{
 .social_media{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 
     .facebook{
-        height: 26px;
+        height: 1.625rem;
         width: 24.6px;
         overflow: hidden;
     }
@@ -36,7 +36,7 @@ footer{
 
         img{
             margin-top: 0;
-            margin-left: -25px;
+            margin-left: -1.5625rem;
         }
     }
 }
@@ -44,7 +44,7 @@ footer{
 @media screen and (max-width: 640px){
     footer{
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
   
 }
