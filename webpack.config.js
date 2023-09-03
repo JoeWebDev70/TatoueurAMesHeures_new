@@ -51,7 +51,7 @@ const path = require('path');
 						options: {
 						  encodeOptions:{
 							webp: {
-							  quality: 60,
+							  quality: 80,
 							}
 						  }
 						}
