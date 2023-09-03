@@ -81,10 +81,14 @@ const path = require('path');
 				new MiniCssExtractPlugin({
 					filename: "style.css"
 				}),
-
 				new CopyPlugin({
 					patterns:[
-						{from: "src/ressources", to: "ressources"},
+						{from: "./src/ressources", to: "ressources"},
+					],
+				}),
+				new CopyPlugin({
+					patterns:[
+						{from: "./src/sitemap.xml", to: "./"},
 					],
 				}),
 			],

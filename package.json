@@ -33,4 +33,3 @@
     "dev": "concurrently \"npm run watch\" \"npm run serve\""
   }
 }
-
